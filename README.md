@@ -24,4 +24,10 @@ _Dependencies_
 _Usage_
  Simply run the script with the following parameters:
 
-WebScraper.py -w <website> -t <file\_type> -f <search\_term> -d <download\_directory>
+WebScraper.py -w website -t file_type -f search_term -d download_directory
+
+where: 
+- website is the website you want to look at 
+- file_type is the type of file you want to scan
+- search_term is the term you're looking for across all files
+- download_directory is the directory where you want all the matched files downloaded
