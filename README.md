@@ -1,6 +1,6 @@
-**README.md**
+<h1>README.md</h1>
 
-**SIMPLE WEBSITE CRAWLER**
+<h2>SIMPLE WEBSITE CRAWLER</h2>
 
 This is a straightforward Python script that:
 - Given a URL searches all links within (nested to one level at the moment) based on the file type specified. By default, it looks for HTML but can handle PDFs as well.
@@ -15,13 +15,13 @@ To-do:
 
 This script has been written and tested on Mac OS X El Capitan with Python 3.5.
 
-_Dependencies_
+**Dependencies**
 
 - Ghostscript v 9.18
 - BeautifulSoup v 4.4.1
 - Python-requests v 2.6.0
 
-_Usage_
+**Usage**
  Simply run the script with the following parameters:
 
 WebScraper.py -w website -t file_type -f search_term -d download_directory
