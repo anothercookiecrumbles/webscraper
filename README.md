@@ -17,7 +17,7 @@ This script has been written and tested on Mac OS X El Capitan with Python 3.5.
 
 _Dependencies_
 
-[Ghostscript v 9.18]
+Ghostscript v 9.18
 BeautifulSoup v 4.4.1
 Python-requests v 2.6.0
 
