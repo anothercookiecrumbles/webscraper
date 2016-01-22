@@ -8,6 +8,7 @@ from http.client import IncompleteRead
 from subprocess import PIPE, Popen
 from urllib.parse import urljoin
 from urllib.error import HTTPError
+from urllib.error import URLError
 from docx import search
 from docx import opendocx
 
@@ -24,11 +25,13 @@ def usage():
     print("-g \t find a specific pattern in the file(s)")
 
 def run(args):
+
     if args.website != None:
         web_page = urllib.request.urlopen(args.website).read()
         soup = BeautifulSoup(web_page, "html.parser")
 
         file_type = args.type or "*" #default file_type to download is html
+
         if (file_type != "*"):
             links = soup.find_all(href=re.compile("." + file_type))
         else:
@@ -95,6 +98,11 @@ def run(args):
             except HTTPError as hte:
                 print("Caught an HTTP error while trying to get: " + absolute_url)
                 print(hte)
+                continue
+            except URLError as ue:
+                print("Caught URL error while trying to get: " + absolute_url)
+                print(ue)
+                continue
 
             finally:
                 if web_file != None:
@@ -120,4 +128,5 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
     run(args)
+    print("All done.")
     sys.exit(0)
