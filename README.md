@@ -21,6 +21,8 @@ This script has been written and tested on Mac OS X El Capitan with Python 3.5.
 - Ghostscript v 9.18
 - BeautifulSoup v 4.4.1
 - Python-requests v 2.6.0
+- lxml v 3.5
+- docx v 0.2.4
 
 **Usage**
  Simply run the script with the following parameters:
