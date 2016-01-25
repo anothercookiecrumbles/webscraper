@@ -8,7 +8,8 @@ This is a straightforward Python script that:
 - Downloads these _links_ if a matching file type is found
 
 To-do:
-- Split up the different search functions by file type, i.e. PDFSearcher, TextSearcher, HTMLSearcher
+- Case-insensitive searches
+- More complex searches (including searching with regexes)
 - Write tests
 - Allow for further nesting up to x levels deep, where x can be passed in by the user or default to 3.
 - Probably make it slightly smarter such that it can run tasks in parallel and hence doesn’t take forever
