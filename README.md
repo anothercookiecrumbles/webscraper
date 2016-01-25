@@ -3,7 +3,7 @@
 <h2>SIMPLE WEBSITE CRAWLER</h2>
 
 This is a straightforward Python script that:
-- Given a URL searches all links within (nested to one level at the moment) based on the file type specified. By default, it looks for HTML but can handle PDFs as well.
+- Given a URL, searches all links within (nested to one level at the moment) based on the file type specified. By default, it looks for HTML but can handle PDFs as well.
 - Looks for the search term in all _links_ of the chosen type
 - Downloads these _links_ if a matching file type is found
 
